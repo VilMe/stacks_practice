@@ -34,13 +34,17 @@
 
 
 def factorial(n):
+    print('factorial has been called with n = ' + str(n))
     if n == 1:
         return 1
     else:
-        return n * factorial(n - 1)
+        result = n * factorial(n - 1)
+        print('intermediate result for', n, '* factorial(',n-1, '):', result)
+        return result
 
+print(factorial(10))
 
-print(factorial(4))
+# print(type(factorial(10)))
 
 
 
