@@ -49,17 +49,26 @@
 
 def fibi(n):
     if n == 0:
-        print('n is 0')
         return 0
-
     elif n == 1:
-        print('n is 1')
         return 1
     else:
-        print('n is', n)   
+        print('what is n??', n)
         return fibi(n-1) + fibi(n-2)
 
-fibi(10)
+print(fibi(10)) 
+
+def fibi_i(n):
+    old, new = 0, 1
+    if n == 0:
+        return 0
+    for i in range(n-1):
+        print('what are old', old, 'new', new)
+        old, new = new, old + new
+        print('what are old', old, 'new', new, 'NOW')        
+    return new
+
+print(fibi_i(10))
 
 
 
