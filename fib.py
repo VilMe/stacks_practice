@@ -33,18 +33,41 @@
 # print_something_ascending('hhhhhell world', 4)
 
 
-def factorial(n):
-    print('factorial has been called with n = ' + str(n))
-    if n == 1:
-        return 1
-    else:
-        result = n * factorial(n - 1)
-        print('intermediate result for', n, '* factorial(',n-1, '):', result)
-        return result
+# def factorial(n):
+#     print('factorial has been called with n = ' + str(n))
+#     if n == 1:
+#         return 1
+#     else:
+#         result = n * factorial(n - 1)
+#         print('intermediate result for', n, '* factorial(',n-1, '):', result)
+#         return result
 
-print(factorial(10))
+# print(factorial(10))
 
 # print(type(factorial(10)))
+
+
+def fibi(n):
+    if n == 0:
+        print('n is 0')
+        return 0
+
+    elif n == 1:
+        print('n is 1')
+        return 1
+    else:
+        print('n is', n)   
+        return fibi(n-1) + fibi(n-2)
+
+fibi(10)
+
+
+
+
+
+
+
+
 
 
 
